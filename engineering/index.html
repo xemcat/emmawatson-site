@@ -1,7 +1,8 @@
 <!DOCTYPE html>
+
 <html lang="en"><head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta name="description" content="Electrical engineer at IBM working across hardware test, controls, data and AI.">
 <link rel="canonical" href="https://emmawatson.site/engineering/">
 <meta property="og:type" content="website">
@@ -15,8 +16,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2214%22 fill=%22%2316181d%22/%3E%3Ctext x=%2232%22 y=%2242%22 font-family=%22Arial%22 font-weight=%22700%22 font-size=%2226%22 fill=%22%23fff%22 text-anchor=%22middle%22%3EEW%3C/text%3E%3C/svg%3E">
 <title>Emma C. Watson | Why Me (Engineering)</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&amp;family=IBM+Plex+Sans+Condensed:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&amp;family=IBM+Plex+Sans+Condensed:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
 
 <style>
 :root{--bp:#0d3b66;--bp2:#0a2f52;--ln:rgba(190,225,255,.16);--ln2:rgba(190,225,255,.07);--w:#eaf4ff;--c:#7fd3ff;--y:#ffd166;--mono:'Space Mono',ui-monospace,monospace;--sans:'IBM Plex Sans Condensed',system-ui,sans-serif}
@@ -55,97 +56,92 @@ svg text{font-family:'Space Mono',monospace;fill:#eaf4ff;font-size:11px}
 .tb .val{font-family:var(--mono);font-size:13px;margin-top:2px;word-break:break-word}
 .btn{background:transparent;border:1px solid var(--y);color:var(--y);font-family:var(--mono);font-size:12px;padding:6px 10px;cursor:pointer;margin-top:6px}
 .btn:hover{background:rgba(255,209,102,.12)}
+.proj>*{min-width:0}.proj svg{display:block;width:100%;max-width:480px;height:auto;margin:0 auto}.tb .val{word-break:normal;overflow-wrap:anywhere}@media (min-width:781px){.tb{grid-template-columns:1.4fr 1.6fr 1fr 1fr}}
 @media (max-width:780px){.pad{padding:24px 18px}.dims{grid-template-columns:repeat(2,1fr)}.proj{grid-template-columns:1fr}.tb{grid-template-columns:1fr 1fr}.tb div{border-bottom:1px solid rgba(234,244,255,.45)}th.id,th.st,td.id,td.st{display:none}}
 </style>
-<style>#rv{display:none!important}#rv:target{display:flex!important}a.btn,a.rvb{display:inline-block;text-decoration:none}</style><style>.proj>*{min-width:0}.proj svg{display:block;width:100%;max-width:480px;height:auto;margin:0 auto}.tb .val{word-break:normal;overflow-wrap:anywhere}@media (min-width:781px){.tb{grid-template-columns:1.4fr 1.6fr 1fr 1fr}}</style></head>
+<style>#rv{display:none!important}#rv:target{display:flex!important}a.btn,a.rvb{display:inline-block;text-decoration:none}</style></head>
 <body>
 <div class="sheet">
-  <div class="pad">
-    <div class="label" id="lbl">Spec sheet · Why Emma</div>
-    <h1>Emma C. Watson</h1>
-    <p class="lead" id="lead">Electrical engineer at IBM working across hardware test, controls, data and AI.</p>
-
-    <div class="dims">
-      <div class="dim"><div class="v">16,000</div><div class="k">chips/month under test</div></div>
-      <div class="dim"><div class="v">+1.5 pts</div><div class="k">yield improvement</div></div>
-      <div class="dim"><div class="v">2 wk → 1.5 d</div><div class="k">approval cycle, team of 6</div></div>
-      <div class="dim"><div class="v">−20 min</div><div class="k">downtime per production run</div></div>
-      <div class="dim"><div class="v">~30</div><div class="k">engineers on production GenAI</div></div>
-      <div class="dim"><div class="v">~1 hr</div><div class="k">root-cause time, down from ~1 week</div></div>
-    </div>
-
-    <h2>Requirements traceability</h2>
-    <table><thead><tr><th class="id">REQ</th><th>REQUIREMENT</th><th>VERIFIED BY</th><th class="st">STATUS</th></tr></thead><tbody id="reqs"><tr><td class="id">REQ-01</td><td class="need">Hardware test and validation</td><td>Validation testing for new hardware and test programs; array-specific logging and debug tooling for high-temperature (HTOL) testing.</td><td class="st">● VERIFIED</td></tr><tr><td class="id">REQ-02</td><td class="need">Controls and automation</td><td>Designed 3 HMIs that cut downtime 20 minutes per production run; mapped PLC network topologies for 2 automated systems.</td><td class="st">● VERIFIED</td></tr><tr><td class="id">REQ-03</td><td class="need">Data-driven decisions</td><td>ML anomaly detection and forecasting in production across ~16,000 chips/month raised yield 1.5 points.</td><td class="st">● VERIFIED</td></tr><tr><td class="id">REQ-04</td><td class="need">AI agents for debug</td><td>Built agents on IBM Bob + custom Python that run root-cause queries automatically, part of cutting RCA from ~1 week to ~1 hour.</td><td class="st">● VERIFIED</td></tr><tr><td class="id">REQ-05</td><td class="need">Production GenAI</td><td>GenAI tools built on IBM Bob, live with ~30 engineers. IBM Bob also speeds up all my development work.</td><td class="st">● VERIFIED</td></tr><tr><td class="id">REQ-06</td><td class="need">Leading cross-functional work</td><td>Led a 6-person team to automate board-schematic approvals: 2 weeks down to 1.5 days.</td><td class="st">● VERIFIED</td></tr><tr><td class="id">REQ-07</td><td class="need">Hands-on build experience</td><td>Designed a vehicle-wide sensor logging system for Baja SAE (Arduino, Python); presented at Steinmetz Day 2025.</td><td class="st">● VERIFIED</td></tr><tr><td class="id">REQ-08</td><td class="need">Manufacturing environments</td><td>Two Abbott internships across 2 sites: SQL + ~10 Power BI dashboards for 5 automated systems, Ignition SCADA automation.</td><td class="st">● VERIFIED</td></tr></tbody></table>
-
-    <h2>Detail A · Baja SAE data acquisition</h2>
-    <div class="proj">
-      <div>
-        <p><b>SCOPE</b><br>Chief of Data Acquisition, Union College Baja SAE Racing, 2023 – 2025. Senior capstone project.</p>
-        <p><b>BUILD</b><br>Vehicle-wide sensor logging and dashboard system on Arduino, Python and multiple development boards, capturing performance across every driving condition.</p>
-        <p><b>OUTCOME</b><br>Temperature data showed the portal axle gears ran far cooler than expected, so the team moved effort to higher-risk systems. Selected to present at Steinmetz Day, May 2025.</p>
-      </div>
-      <svg viewBox="0 0 420 240" role="img" aria-label="Diagram of sensors feeding a logger and dashboard">
-        <g fill="none" stroke="#7fd3ff" stroke-width="1.5">
-          <rect x="10" y="20" width="110" height="36"></rect><rect x="10" y="102" width="110" height="36"></rect><rect x="10" y="184" width="110" height="36"></rect>
-          <rect x="170" y="92" width="100" height="56"></rect>
-          <rect x="310" y="40" width="100" height="44"></rect><rect x="310" y="156" width="100" height="44"></rect>
-          <path d="M120 38 H145 V120 H170 M120 120 H170 M120 202 H145 V120"></path>
-          <path d="M270 110 H290 V62 H310 M270 130 H290 V178 H310"></path>
-        </g>
-        <g fill="#7fd3ff"><path d="M170 120 l-7 -4 v8z"></path><path d="M310 62 l-7 -4 v8z"></path><path d="M310 178 l-7 -4 v8z"></path></g>
-        <text x="65" y="42" text-anchor="middle">TEMP SENSORS</text>
-        <text x="65" y="124" text-anchor="middle">SPEED / RPM</text>
-        <text x="65" y="206" text-anchor="middle">VEHICLE DATA</text>
-        <text x="220" y="116" text-anchor="middle">ARDUINO</text>
-        <text x="220" y="132" text-anchor="middle">LOGGER</text>
-        <text x="360" y="66" text-anchor="middle">PYTHON</text>
-        <text x="360" y="182" text-anchor="middle">DASHBOARD</text>
-      </svg>
-    </div>
-
-    <h2>Detail B · AI root-cause agents at IBM</h2>
-    <div class="proj">
-      <div>
-        <p><b>SCOPE</b><br>IBM, Aug 2025 – present. HTOL test data for ~16,000 chips/month.</p>
-        <p><b>BUILD</b><br>AI agents on IBM Bob + custom Python that run root-cause queries when an anomaly fires. In production with ~30 engineers.</p>
-        <p><b>OUTCOME</b><br>Part of cutting root-cause analysis from ~1 week to ~1 hour and saving ~25 engineering hours a week.</p>
-      </div>
-      <svg viewBox="0 0 420 240" role="img" aria-label="Diagram of anomaly alerts feeding AI agents that query test data and return a root cause">
-        <g fill="none" stroke="#7fd3ff" stroke-width="1.5">
-          <rect x="10" y="92" width="100" height="56"></rect>
-          <rect x="150" y="82" width="120" height="76"></rect>
-          <rect x="310" y="30" width="100" height="44"></rect><rect x="310" y="166" width="100" height="44"></rect>
-          <path d="M110 120 H150"></path>
-          <path d="M270 105 H290 V52 H310"></path>
-          <path d="M310 188 H290 V135 H270"></path>
-        </g>
-        <g fill="#7fd3ff"><path d="M150 120 l-7 -4 v8z"></path><path d="M310 52 l-7 -4 v8z"></path><path d="M270 135 l7 -4 v8z"></path></g>
-        <text x="60" y="116" text-anchor="middle">ML ANOMALY</text>
-        <text x="60" y="132" text-anchor="middle">ALERT</text>
-        <text x="210" y="108" text-anchor="middle">AI AGENTS</text>
-        <text x="210" y="124" text-anchor="middle">IBM BOB +</text>
-        <text x="210" y="140" text-anchor="middle">PYTHON</text>
-        <text x="360" y="56" text-anchor="middle">DB2 QUERIES</text>
-        <text x="360" y="184" text-anchor="middle">ROOT CAUSE</text>
-        <text x="360" y="200" text-anchor="middle">VIA IBM BOB</text>
-      </svg>
-    </div>
-  </div>
-  <div class="tb">
-    <div><div class="label">Drawn by</div><div class="val">E. C. Watson, B.S. Electrical Engineering, Minor in Data Analytics, Union College</div></div>
-    <div><div class="label">Email · Phone</div><div class="val">watsonemmac@myyahoo.com</div><div class="val">(603) 605-4960</div><a class="btn" href="mailto:watsonemmac@myyahoo.com">Email me</a></div>
-    <div><div class="label">LinkedIn</div><div class="val"><a href="https://www.linkedin.com/in/emma-catherine-watson/">emma-catherine-watson</a></div></div>
-    <div><div class="label">Rev · Resume</div><div class="val">A</div><a class="btn" href="#rv">View resume (PDF)</a> </div>
-  </div>
+<div class="pad">
+<div class="label" id="lbl">Spec sheet · Why Emma</div>
+<h1>Emma C. Watson</h1>
+<p class="lead" id="lead">Electrical engineer at IBM working across hardware test, controls, data and AI. Relocating to San Diego; open to remote.</p>
+<div class="dims">
+<div class="dim"><div class="v">16,000</div><div class="k">chips/month under test</div></div>
+<div class="dim"><div class="v">+1.5 pts</div><div class="k">yield improvement</div></div>
+<div class="dim"><div class="v">2 wk → 1.5 d</div><div class="k">approval cycle, team of 6</div></div>
+<div class="dim"><div class="v">−20 min</div><div class="k">downtime per production run</div></div>
+<div class="dim"><div class="v">~30</div><div class="k">engineers use my yield app daily</div></div>
+<div class="dim"><div class="v">~1 hr</div><div class="k">root-cause time, down from ~1 week</div></div>
+</div>
+<h2>Requirements traceability</h2>
+<table><thead><tr><th class="id">REQ</th><th>REQUIREMENT</th><th>VERIFIED BY</th></tr></thead><tbody id="reqs"><tr><td class="id">REQ-01</td><td class="need">Hardware test and validation</td><td>Validation testing for new hardware and test programs, automated through Jenkins pipelines (Groovy); array-specific logging and debug tooling for high-temperature (HTOL) testing.</td></tr><tr><td class="id">REQ-02</td><td class="need">Controls and automation</td><td>Designed 3 HMIs that cut downtime 20 minutes per production run; mapped PLC network topologies for 2 automated systems.</td></tr><tr><td class="id">REQ-03</td><td class="need">Data-driven decisions</td><td>ML anomaly detection and forecasting in production across ~16,000 chips/month raised yield 1.5 points.</td></tr><tr><td class="id">REQ-04</td><td class="need">AI agents for debug</td><td>AI agents on IBM Bob + custom Python run root-cause queries automatically; production GenAI tools on IBM Bob adopted across the test team.</td></tr><tr><td class="id">REQ-05</td><td class="need">Leading cross-functional work</td><td>Led a 6-person team to automate board-schematic approvals: 2 weeks down to 1.5 days.</td></tr><tr><td class="id">REQ-06</td><td class="need">Hands-on build experience</td><td>Designed a vehicle-wide sensor logging system for Baja SAE (C++, Arduino), including 3 custom PCBs and an IP64-rated enclosure; presented at Steinmetz Day 2025.</td></tr><tr><td class="id">REQ-07</td><td class="need">Manufacturing environments</td><td>Two Abbott internships across 2 sites: SQL + ~10 Power BI dashboards for 5 automated systems, Ignition SCADA automation.</td></tr></tbody></table>
+<h2>Detail A · Baja SAE data acquisition</h2>
+<div class="proj">
+<div>
+<p><b>SCOPE</b><br/>Chief of Data Acquisition, Union College Baja SAE Racing, 2023 – 2025. Senior capstone project.</p>
+<p><b>BUILD</b><br/>Vehicle-wide sensor logging and dashboard system (C++, Arduino, multiple development boards), with 3 custom PCBs and an IP64-rated aluminum enclosure for 5 sensors.</p>
+<p><b>OUTCOME</b><br/>Temperature data showed the portal axle gears ran far cooler than expected, so the team moved effort to higher-risk systems. Oil temperature validated to within 0.2°F; 7.7 hours of battery runtime against a 6-hour target. Selected to present at Steinmetz Day, May 2025.</p>
+</div>
+<svg aria-label="Diagram of sensors feeding a logger and dashboard" role="img" viewbox="0 0 420 240">
+<g fill="none" stroke="#7fd3ff" stroke-width="1.5">
+<rect height="36" width="110" x="10" y="20"></rect><rect height="36" width="110" x="10" y="102"></rect><rect height="36" width="110" x="10" y="184"></rect>
+<rect height="56" width="100" x="170" y="92"></rect>
+<rect height="44" width="100" x="310" y="40"></rect><rect height="44" width="100" x="310" y="156"></rect>
+<path d="M120 38 H145 V120 H170 M120 120 H170 M120 202 H145 V120"></path>
+<path d="M270 110 H290 V62 H310 M270 130 H290 V178 H310"></path>
+</g>
+<g fill="#7fd3ff"><path d="M170 120 l-7 -4 v8z"></path><path d="M310 62 l-7 -4 v8z"></path><path d="M310 178 l-7 -4 v8z"></path></g>
+<text text-anchor="middle" x="65" y="42">TEMP SENSORS</text>
+<text text-anchor="middle" x="65" y="124">SPEED / RPM</text>
+<text text-anchor="middle" x="65" y="206">VEHICLE DATA</text>
+<text text-anchor="middle" x="220" y="116">ARDUINO</text>
+<text text-anchor="middle" x="220" y="132">LOGGER</text>
+<text text-anchor="middle" x="360" y="66">PYTHON</text>
+<text text-anchor="middle" x="360" y="182">DASHBOARD</text>
+</svg>
+</div>
+<h2>Detail B · AI root-cause agents at IBM</h2>
+<div class="proj">
+<div>
+<p><b>SCOPE</b><br/>IBM, Aug 2025 – present. HTOL test data for ~16,000 chips/month.</p>
+<p><b>BUILD</b><br/>AI agents on IBM Bob + custom Python that run root-cause queries when an anomaly fires. In production.</p>
+<p><b>OUTCOME</b><br/>Part of cutting root-cause analysis from ~1 week to ~1 hour and saving ~25 engineering hours a week.</p>
+</div>
+<svg aria-label="Diagram of anomaly alerts feeding AI agents that query test data and return a root cause" role="img" viewbox="0 0 420 240">
+<g fill="none" stroke="#7fd3ff" stroke-width="1.5">
+<rect height="56" width="100" x="10" y="92"></rect>
+<rect height="76" width="120" x="150" y="82"></rect>
+<rect height="44" width="100" x="310" y="30"></rect><rect height="44" width="100" x="310" y="166"></rect>
+<path d="M110 120 H150"></path>
+<path d="M270 105 H290 V52 H310"></path>
+<path d="M310 188 H290 V135 H270"></path>
+</g>
+<g fill="#7fd3ff"><path d="M150 120 l-7 -4 v8z"></path><path d="M310 52 l-7 -4 v8z"></path><path d="M270 135 l7 -4 v8z"></path></g>
+<text text-anchor="middle" x="60" y="116">ML ANOMALY</text>
+<text text-anchor="middle" x="60" y="132">ALERT</text>
+<text text-anchor="middle" x="210" y="108">AI AGENTS</text>
+<text text-anchor="middle" x="210" y="124">IBM BOB +</text>
+<text text-anchor="middle" x="210" y="140">PYTHON</text>
+<text text-anchor="middle" x="360" y="56">DB2 QUERIES</text>
+<text text-anchor="middle" x="360" y="184">ROOT CAUSE</text>
+<text text-anchor="middle" x="360" y="200">VIA IBM BOB</text>
+</svg>
+</div>
+</div>
+<div class="tb">
+<div><div class="label">Drawn by</div><div class="val">E. C. Watson, B.S. Electrical Engineering, Minor in Data Analytics, Union College</div></div>
+<div><div class="label">Email · Phone</div><div class="val">watsonemmac@myyahoo.com</div><div class="val">(603) 605-4960</div><a class="btn" href="mailto:watsonemmac@myyahoo.com">Email me</a></div>
+<div><div class="label">LinkedIn</div><div class="val"><a href="https://www.linkedin.com/in/emma-catherine-watson/">emma-catherine-watson</a></div></div>
+<div><div class="label">Rev · Resume</div><div class="val">A</div><a class="btn" href="#rv">View resume (PDF)</a> </div>
+</div>
 </div>
 
-<div id="rv" role="dialog" aria-modal="true" aria-label="Resume" style="position:fixed;inset:0;background:#525659;display:none;flex-direction:column;z-index:9999;font-family:Inter,system-ui,sans-serif">
+<div aria-label="Resume" aria-modal="true" id="rv" role="dialog" style="position:fixed;inset:0;background:#525659;display:none;flex-direction:column;z-index:9999;font-family:Inter,system-ui,sans-serif">
 <div style="display:flex;align-items:center;gap:12px;padding:10px 16px;background:#323639;color:#f1f1f1;font-size:13px"><b style="font-weight:600">Emma C. Watson · Resume</b><span style="opacity:.7">Page 1 of 1</span>
 <span style="margin-left:auto;display:flex;gap:8px;align-items:center"><a class="rvb" href="#">Close ✕</a></span></div>
-<div style="flex:1;overflow:auto;padding:24px 16px 40px"><div id="rvp" style="position: relative; margin: 0px auto; background: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 12px; aspect-ratio: 8.5 / 11; width: min(816px, -32px + 100vw);"><img src="resume.png" alt="Emma C. Watson resume" style="display:block;width:100%;height:100%"><a href="https://www.linkedin.com/in/emma-catherine-watson/" target="_blank" rel="noopener" title="LinkedIn" style="position:absolute;left:37.5%;top:4.2%;width:27%;height:3.6%"></a></div></div></div>
+<div style="flex:1;overflow:auto;padding:24px 16px 40px"><div id="rvp" style="position:relative;margin:0 auto;background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.45);aspect-ratio:8.5/11;width:min(816px,calc(100vw - 32px))"><img alt="Emma C. Watson resume" src="resume.png" style="display:block;width:100%;height:100%"/><a href="https://www.linkedin.com/in/emma-catherine-watson/" rel="noopener" style="position:absolute;left:37.5%;top:4.2%;width:27%;height:3.6%" target="_blank" title="LinkedIn"></a></div></div></div>
 <style>.rvb{background:#4a4e51;border:none;color:#f1f1f1;border-radius:6px;padding:6px 10px;font:500 12px Inter,system-ui,sans-serif;cursor:pointer}.rvb:hover{background:#5d6164}</style>
-
-
 
 
 </body></html>
