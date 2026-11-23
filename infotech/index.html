@@ -76,16 +76,17 @@ a.chip:hover{background:rgba(10,37,64,.5)}
 .btn{min-height:42px}
 .hero{clip-path:polygon(0 0,100% 0,100% calc(100% - 150px),0 100%)}.hero::before{inset:-40% -10% -40% -10%;height:auto}.hero::after{display:none}
 @media (max-width:640px){.hero{padding:48px 20px 150px}.hrow{flex-direction:column;align-items:flex-start;gap:22px}.av{width:108px;height:108px}.av span{font-size:36px}.lead{font-size:17px}.stat .v{font-size:26px}.cta{padding:24px}.btns .btn{flex:1 1 auto;text-align:center}}
+.cta-chip{background:#fff;color:var(--accent);border-color:#fff;font-weight:600;cursor:pointer}.cta-chip:hover{background:#efeeff}
 </style>
 <style>#rv{display:none!important}#rv:target{display:flex!important}a.btn,a.rvb{display:inline-block;text-decoration:none}</style></head>
 <body>
 <div class="hero"><div class="in hrow">
-  <div class="av" aria-hidden="true"><span>EW</span></div><!-- PHOTO: replace this div with <div class="av"><img src="previews/headshot.jpg" alt="Emma C. Watson"></div> -->
+  <div class="av"><img src="headshot.jpg" alt="Emma C. Watson"></div>
   <div class="hdt">
   <span class="pill" id="pill">Why Emma for the App Support role</span>
   <h1>Emma C. Watson</h1>
   <p class="lead" id="lead">Data engineer at IBM supporting a production Python and SQL platform: log analysis, stack traces, root-cause analysis and AI agents. Based in Stamford, CT, minutes from Greenwich.</p>
-  <div class="chips"><span class="chip"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0114 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg> Stamford, CT</span><a class="chip" href="mailto:watsonemmac@myyahoo.com"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg> Email</a><a class="chip" href="https://www.linkedin.com/in/emma-catherine-watson/"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 110 5 2.5 2.5 0 010-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.1c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V21h-4z"/></svg> LinkedIn</a></div>
+  <div class="chips"><a class="chip cta-chip" href="#rv"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 3H6a2 2 0 00-2 2v14a2 2 0 002 2h12a2 2 0 002-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg> View resume (PDF)</a><span class="chip"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0114 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg> Stamford, CT</span><a class="chip" href="mailto:watsonemmac@myyahoo.com"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg> Email</a><a class="chip" href="https://www.linkedin.com/in/emma-catherine-watson/"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 110 5 2.5 2.5 0 010-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.1c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V21h-4z"/></svg> LinkedIn</a></div>
   </div>
 </div></div>
 <div class="wrap">
