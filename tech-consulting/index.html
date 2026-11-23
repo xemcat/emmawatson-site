@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Data engineer at IBM building Python and SQL pipelines, data quality checks, and automation on production test data.">
+<link rel="canonical" href="https://emmawatson.site/tech-consulting/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Emma C. Watson">
+<meta property="og:title" content="Emma C. Watson | Why Me (Data Engineering)">
+<meta property="og:description" content="Data engineer at IBM building Python and SQL pipelines, data quality checks, and automation on production test data.">
+<meta property="og:url" content="https://emmawatson.site/tech-consulting/">
+<meta property="og:image" content="https://emmawatson.site/og/tech-consulting.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2214%22 fill=%22%2316181d%22/%3E%3Ctext x=%2232%22 y=%2242%22 font-family=%22Arial%22 font-weight=%22700%22 font-size=%2226%22 fill=%22%23fff%22 text-anchor=%22middle%22%3EEW%3C/text%3E%3C/svg%3E">
+<title>Emma C. Watson | Why Me (Data Engineering)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#0f172a;--mut:#64748b;--ln:#e2e8f0;--ac:#0f766e;--ac2:#4f46e5;--ok:#16a34a;--amb:#d97706;--mono:'JetBrains Mono',ui-monospace,monospace;--sans:Inter,system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}[hidden]{display:none!important}
+body{background:var(--bg);background-image:radial-gradient(#cbd5e1 1px,transparent 1px);background-size:22px 22px;color:var(--ink);font-family:var(--sans);line-height:1.55;min-height:100vh}
+a{color:var(--ac)}
+.wrap{max-width:1060px;margin:28px auto;padding:0 16px}
+.card{background:var(--card);border:1px solid var(--ln);border-radius:14px;box-shadow:0 1px 2px rgba(15,23,42,.04),0 8px 28px rgba(15,23,42,.06)}
+.top{display:flex;align-items:center;gap:10px;padding:12px 20px;border-bottom:1px solid var(--ln);font:500 12px var(--mono);color:var(--mut)}
+.top .dot{width:8px;height:8px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 3px rgba(22,163,74,.15)}
+.top .sp{margin-left:auto}
+.pad{padding:40px 40px 32px}
+.hrow{display:flex;gap:36px;align-items:center}
+.av{flex:none;width:120px;height:120px;border-radius:50%;border:2px solid var(--ac);padding:5px}
+.av span,.av img{width:100%;height:100%;border-radius:50%;object-fit:cover;display:grid;place-items:center}
+.av span{background:linear-gradient(135deg,#ccfbf1,#e0e7ff);font:700 36px var(--mono);color:var(--ac)}
+.label{font:600 11px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--ac)}
+h1{font-weight:700;font-size:clamp(30px,5vw,48px);letter-spacing:-.025em;margin:6px 0 6px}
+.lead{font-size:18px;max-width:660px;color:#334155}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.chip{display:inline-flex;align-items:center;gap:7px;font:500 12px var(--mono);color:var(--ink);border:1px solid var(--ln);background:#f8fafc;padding:8px 12px;border-radius:8px;text-decoration:none;min-height:36px}
+a.chip:hover{border-color:var(--ac);color:var(--ac)}
+.chip svg{color:var(--ac)}
+h2{display:flex;align-items:center;gap:12px;font:700 13px var(--mono);letter-spacing:.1em;text-transform:uppercase;margin:48px 0 16px;color:var(--ink)}
+h2 .tag{font-weight:500;color:var(--ac2);background:#eef2ff;border-radius:6px;padding:2px 8px;letter-spacing:.02em;text-transform:none}
+h2::after{content:"";flex:1;height:1px;background:var(--ln)}
+.dag{display:grid;grid-template-columns:repeat(6,1fr);gap:0;align-items:stretch}
+.node{position:relative;border:1px solid var(--ln);border-radius:10px;padding:14px 12px;background:#fff;margin-right:18px}
+.node:last-child{margin-right:0}
+.node:not(:last-child)::after{content:"";position:absolute;right:-19px;top:50%;width:18px;height:2px;background:var(--ac)}
+.node:not(:last-child)::before{content:"";position:absolute;right:-20px;top:calc(50% - 4px);border:5px solid transparent;border-left-color:var(--ac)}
+.node .st{display:flex;align-items:center;gap:6px;font:500 10px var(--mono);color:var(--ok);letter-spacing:.06em}
+.node .st i{width:6px;height:6px;border-radius:50%;background:var(--ok)}
+.node .v{font:700 24px var(--mono);margin-top:8px;letter-spacing:-.02em;color:var(--ink)}
+.node .k{font-size:12.5px;color:var(--mut);margin-top:2px;line-height:1.4}
+.grid{border:1px solid var(--ln);border-radius:10px;overflow:hidden}
+table{width:100%;border-collapse:collapse;font-size:14.5px}
+th,td{padding:13px 16px;text-align:left;vertical-align:top;border-bottom:1px solid var(--ln)}
+tr:last-child td{border-bottom:none}
+th{font:600 11px var(--mono);color:var(--mut);background:#f8fafc;letter-spacing:.04em}
+th em{font-style:normal;color:var(--ac2);font-weight:500}
+td.n{font:500 12px var(--mono);color:var(--mut);width:46px}
+td.need{font-weight:600;width:27%}
+td{line-height:1.6}
+tbody tr:hover td{background:#f0fdfa}
+.proj{display:grid;grid-template-columns:1fr 1.15fr;gap:28px;align-items:center}
+.proj>*{min-width:0}
+.proj p{margin-bottom:12px;color:#334155;line-height:1.65}
+.proj b{display:block;font:600 11px var(--mono);letter-spacing:.1em;color:var(--ac)}
+.proj svg{display:block;width:100%;max-width:500px;height:auto;margin:0 auto}
+svg text{font-family:'JetBrains Mono',monospace;font-size:10.5px;fill:#0f172a}
+svg .sub{fill:#64748b;font-size:9px}
+.foot{display:grid;grid-template-columns:1.4fr 1.6fr 1fr 1fr;border-top:1px solid var(--ln)}
+.foot>div{padding:14px 18px;border-right:1px solid var(--ln)}
+.foot>div:last-child{border-right:none}
+.foot .label{font-size:10px;color:var(--mut)}
+.foot .val{font:500 13px var(--mono);margin-top:3px;overflow-wrap:anywhere}
+.btn{display:inline-block;background:var(--ac);border:1px solid var(--ac);color:#fff;font:600 12px var(--mono);padding:7px 11px;border-radius:7px;cursor:pointer;margin-top:8px;text-decoration:none}
+.btn:hover{background:#115e59}
+.btn.ghost{background:#fff;color:var(--ac)}
+.btn.ghost:hover{background:#f0fdfa}
+@media (max-width:900px){.dag{grid-template-columns:repeat(3,1fr);row-gap:16px}.node:nth-child(3)::after,.node:nth-child(3)::before{display:none}}
+@media (max-width:780px){.pad{padding:26px 18px}.proj{grid-template-columns:1fr}.foot{grid-template-columns:1fr 1fr}.foot>div{border-bottom:1px solid var(--ln)}td.n,th.n{display:none}}
+@media (max-width:640px){.hrow{flex-direction:column;align-items:flex-start;gap:20px}.av{width:96px;height:96px}.av span{font-size:28px}.dag{grid-template-columns:repeat(2,1fr)}.node{margin-right:0}.node::after,.node::before{display:none}.dag{gap:12px}.node .v{font-size:20px}}
+</style>
+<style>#rv{display:none!important}#rv:target{display:flex!important}a.btn,a.rvb{display:inline-block;text-decoration:none}</style></head>
+<body>
+<div class="wrap"><div class="card">
+  <div class="top"><span class="dot"></span><span id="run">pipeline: why_emma · last run succeeded</span><span class="sp">dag_id=data_engineer</span></div>
+  <div class="pad">
+    <div class="hrow">
+      <div class="av" aria-hidden="true"><span>EW</span></div>
+      <div>
+        <div class="label" id="lbl">Why Emma · Data Engineer</div>
+        <h1>Emma C. Watson</h1>
+        <p class="lead" id="lead">Data engineer at IBM building Python and SQL pipelines, data quality checks, and automation on production test data, ready to bring that to tech consulting clients. Relocating to San Diego; open to remote.</p>
+        <div class="chips"><span class="chip"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0114 0C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg> San Diego · Remote</span><a class="chip" href="mailto:watsonemmac@myyahoo.com"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6"></path></svg> Email</a><a class="chip" href="https://www.linkedin.com/in/emma-catherine-watson/"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 110 5 2.5 2.5 0 010-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.1c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V21h-4z"></path></svg> LinkedIn</a><a class="chip" style="cursor:pointer" href="#rv"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 3H6a2 2 0 00-2 2v14a2 2 0 002 2h12a2 2 0 002-2V9z"></path><path d="M14 3v6h6M8 13h8M8 17h6"></path></svg> Resume (PDF)</a></div>
+      </div>
+    </div>
+
+    <h2>Run metrics <span class="tag">IBM, production</span></h2>
+    <div class="dag">
+      <div class="node"><div class="st"><i></i>EXTRACT</div><div class="v">16,000</div><div class="k">chips/month of test data ingested</div></div>
+      <div class="node"><div class="st"><i></i>VALIDATE</div><div class="v">+1.5 pts</div><div class="k">yield from anomaly alerts on clean data</div></div>
+      <div class="node"><div class="st"><i></i>AUTOMATE</div><div class="v">~25 hrs</div><div class="k">engineering time saved per week</div></div>
+      <div class="node"><div class="st"><i></i>QUERY</div><div class="v">~1 hr</div><div class="k">root cause, down from ~1 week</div></div>
+      <div class="node"><div class="st"><i></i>CONSOLIDATE</div><div class="v">8 → 1</div><div class="k">platforms replaced by my app</div></div>
+      <div class="node"><div class="st"><i></i>SERVE</div><div class="v">~30</div><div class="k">engineers use it daily</div></div>
+    </div>
+
+    <h2>Requirements → evidence <span class="tag">SELECT * FROM fit</span></h2>
+    <div class="grid"><table><thead><tr><th class="n">#</th><th>requirement <em>varchar</em></th><th>evidence <em>text</em></th></tr></thead><tbody id="reqs"><tr><td class="n">01</td><td class="need">ETL pipelines</td><td>Build and maintain Python + SQL ETL pipelines that pull HTOL test data from IBM Db2 and SQL Server and load it into reporting tables, ~16,000 chips/month.</td></tr><tr><td class="n">02</td><td class="need">Structured + unstructured sources</td><td>Parse raw tester logs and output alongside relational sources, then clean and transform it into one consistent dataset.</td></tr><tr><td class="n">03</td><td class="need">Strong SQL, relational databases</td><td>SQL daily on IBM Db2 and SQL Server, including the root-cause queries behind my AI agents. Built SQL Server databases at Abbott.</td></tr><tr><td class="n">04</td><td class="need">Data modeling and database design</td><td>Designed the reporting tables at IBM. At Abbott, SQL Server databases feeding ~10 Power BI dashboards for 5 systems across 2 sites.</td></tr><tr><td class="n">05</td><td class="need">Python automation workflows</td><td>Jenkins pipelines (Groovy) + Python automate test-program and data jobs. AI agents on IBM Bob cut root cause from ~1 week to ~1 hour, saving ~25 hrs/week.</td></tr><tr><td class="n">06</td><td class="need">Data quality and reliability</td><td>Cleaning, validation, and consistency checks built into the pipelines, validated against prior manual checks. ML anomaly alerts catch bad data early; yield up 1.5 points.</td></tr><tr><td class="n">07</td><td class="need">Cross-functional teams and stakeholders</td><td>My yield app is used daily by ~30 engineers and replaced 8 platforms. Led a 6-person cross-functional team: approvals from 2 weeks to 1.5 days.</td></tr><tr><td class="n">08</td><td class="need">Git, Docker, CI/CD</td><td>Jenkins CI/CD, Git/GitHub, Docker, Linux, REST APIs (FastAPI), Redis, Celery.</td></tr><tr><td class="n">09</td><td class="need">BI tools</td><td>~10 Power BI dashboards at Abbott; production Dash/Plotly app at IBM.</td></tr></tbody></table></div>
+
+    <h2>Lineage A · IBM test-data pipeline</h2>
+    <div class="proj">
+      <div>
+        <p><b>SCOPE</b>IBM, Aug 2025 – present. HTOL test data for IBM Power, Z, and AI chips, ~16,000 chips/month.</p>
+        <p><b>BUILD</b>Python + SQL ETL from IBM Db2, SQL Server, and raw tester logs. Cleaning, validation, and consistency checks, then load into tables I designed. Jenkins (Groovy) runs and monitors the jobs.</p>
+        <p><b>OUTCOME</b>One trusted dataset behind the burn-in yield app (~30 daily users, replaced 8 platforms) and the ML anomaly alerts that raised yield 1.5 points.</p>
+      </div>
+      <svg viewBox="0 0 460 250" role="img" aria-label="Lineage: Db2, SQL Server and tester logs feed Python ETL, validation checks and modeled tables, which serve the yield app, ML alerts and AI agents">
+        <g fill="#fff" stroke="#cbd5e1" stroke-width="1.2">
+          <rect x="6" y="20" width="96" height="40" rx="8"></rect><rect x="6" y="105" width="96" height="40" rx="8"></rect><rect x="6" y="190" width="96" height="40" rx="8"></rect>
+          <rect x="124" y="98" width="104" height="54" rx="8" stroke="#0f766e"></rect>
+          <rect x="240" y="98" width="104" height="54" rx="8" stroke="#0f766e"></rect>
+          <rect x="362" y="20" width="92" height="40" rx="8"></rect><rect x="360" y="105" width="94" height="40" rx="8"></rect><rect x="360" y="190" width="94" height="40" rx="8"></rect>
+        </g>
+        <g fill="none" stroke="#0f766e" stroke-width="1.5">
+          <path d="M102 40 H113 V125 H124 M102 125 H124 M102 210 H113 V125"></path>
+          <path d="M228 125 H240"></path>
+          <path d="M344 125 H352 V40 H360 M344 125 H360 M352 125 V210 H360"></path>
+        </g>
+        <g fill="#0f766e"><path d="M124 125 l-6 -4 v8z"></path><path d="M240 125 l-6 -4 v8z"></path><path d="M360 40 l-6 -4 v8z"></path><path d="M360 125 l-6 -4 v8z"></path><path d="M360 210 l-6 -4 v8z"></path></g>
+        <text x="54" y="38" text-anchor="middle">IBM DB2</text><text x="54" y="51" text-anchor="middle" class="sub">relational</text>
+        <text x="54" y="123" text-anchor="middle">SQL SERVER</text><text x="54" y="136" text-anchor="middle" class="sub">relational</text>
+        <text x="54" y="208" text-anchor="middle">TESTER LOGS</text><text x="54" y="221" text-anchor="middle" class="sub">unstructured</text>
+        <text x="176" y="122" text-anchor="middle">PYTHON ETL</text><text x="176" y="136" text-anchor="middle" class="sub">parse · transform</text>
+        <text x="292" y="122" text-anchor="middle">QA CHECKS</text><text x="292" y="136" text-anchor="middle" class="sub">→ modeled tables</text>
+        <text x="407" y="38" text-anchor="middle">YIELD APP</text><text x="407" y="51" text-anchor="middle" class="sub">~30 users</text>
+        <text x="407" y="123" text-anchor="middle">ML ALERTS</text><text x="407" y="136" text-anchor="middle" class="sub">+1.5 pts yield</text>
+        <text x="407" y="208" text-anchor="middle">AI AGENTS</text><text x="407" y="221" text-anchor="middle" class="sub">IBM Bob</text>
+        <text x="230" y="246" text-anchor="middle" class="sub">orchestrated by Jenkins (Groovy)</text>
+      </svg>
+    </div>
+
+    <h2>Lineage B · AI root-cause agents</h2>
+    <div class="proj">
+      <div>
+        <p><b>SCOPE</b>IBM, in production. Failure investigation on HTOL test data.</p>
+        <p><b>BUILD</b>When an anomaly fires, AI agents on IBM Bob + custom Python run root-cause SQL queries against the modeled tables and return the likely cause.</p>
+        <p><b>OUTCOME</b>Root cause from ~1 week to ~1 hour; with automated reporting, ~25 engineering hours saved a week. Production GenAI tools on IBM Bob used by ~30 engineers.</p>
+      </div>
+      <svg viewBox="0 0 460 210" role="img" aria-label="Anomaly alert triggers AI agents that run SQL on modeled tables and return a root cause">
+        <g fill="#fff" stroke="#cbd5e1" stroke-width="1.2">
+          <rect x="6" y="78" width="100" height="54" rx="8"></rect>
+          <rect x="150" y="70" width="130" height="70" rx="8" stroke="#4f46e5"></rect>
+          <rect x="334" y="16" width="120" height="48" rx="8"></rect><rect x="334" y="146" width="120" height="48" rx="8"></rect>
+        </g>
+        <g fill="none" stroke="#4f46e5" stroke-width="1.5"><path d="M106 105 H150"></path><path d="M280 95 H305 V40 H334"></path><path d="M334 170 H305 V115 H280"></path></g>
+        <g fill="#4f46e5"><path d="M150 105 l-6 -4 v8z"></path><path d="M334 40 l-6 -4 v8z"></path><path d="M280 115 l6 -4 v8z"></path></g>
+        <text x="56" y="102" text-anchor="middle">ANOMALY</text><text x="56" y="116" text-anchor="middle" class="sub">ML alert</text>
+        <text x="215" y="98" text-anchor="middle">AI AGENTS</text><text x="215" y="113" text-anchor="middle" class="sub">IBM Bob + Python</text>
+        <text x="394" y="37" text-anchor="middle">SQL QUERIES</text><text x="394" y="51" text-anchor="middle" class="sub">Db2 · SQL Server</text>
+        <text x="394" y="167" text-anchor="middle">ROOT CAUSE</text><text x="394" y="181" text-anchor="middle" class="sub">~1 wk → ~1 hr</text>
+      </svg>
+    </div>
+  </div>
+  <div class="foot">
+    <div><div class="label">Owner</div><div class="val">Emma C. Watson · B.S. Electrical Engineering, Minor in Data Analytics, Union College</div></div>
+    <div><div class="label">Email · Phone</div><div class="val">watsonemmac@myyahoo.com</div><div class="val">(603) 605-4960</div><a class="btn ghost" href="mailto:watsonemmac@myyahoo.com">Copy email</a></div>
+    <div><div class="label">LinkedIn</div><div class="val"><a href="https://www.linkedin.com/in/emma-catherine-watson/">emma-catherine-watson</a></div></div>
+    <div><div class="label">Resume</div><div class="val">v1 · 1 page</div><a class="btn" href="#rv">View resume (PDF)</a> </div>
+  </div>
+</div></div>
+
+<div id="rv" role="dialog" aria-modal="true" aria-label="Resume" style="position:fixed;inset:0;background:#525659;display:none;flex-direction:column;z-index:9999;font-family:Inter,system-ui,sans-serif">
+<div style="display:flex;align-items:center;gap:12px;padding:10px 16px;background:#323639;color:#f1f1f1;font-size:13px"><b style="font-weight:600">Emma C. Watson · Resume</b><span style="opacity:.7">Page 1 of 1</span>
+<span style="margin-left:auto;display:flex;gap:8px;align-items:center"><a class="rvb" href="#">Close ✕</a></span></div>
+<div style="flex:1;overflow:auto;padding:24px 16px 40px"><div id="rvp" style="position: relative; margin: 0px auto; background: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 12px; aspect-ratio: 8.5 / 11; width: min(816px, -32px + 100vw);"><img src="resume.png" alt="Emma C. Watson resume" style="display:block;width:100%;height:100%"><a href="https://www.linkedin.com/in/emma-catherine-watson/" target="_blank" rel="noopener" title="LinkedIn" style="position:absolute;left:34%;top:4%;width:32%;height:4%"></a></div></div></div>
+<style>.rvb{background:#4a4e51;border:none;color:#f1f1f1;border-radius:6px;padding:6px 10px;font:500 12px Inter,system-ui,sans-serif;cursor:pointer}.rvb:hover{background:#5d6164}</style>
+
+
+
+
+</body></html>
