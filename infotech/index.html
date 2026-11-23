@@ -76,6 +76,19 @@ a.chip:hover{background:rgba(10,37,64,.5)}
 .btn{min-height:42px}
 .hero{clip-path:polygon(0 0,100% 0,100% calc(100% - 150px),0 100%)}.hero::before{inset:-40% -10% -40% -10%;height:auto}.hero::after{display:none}
 @media (max-width:640px){.hero{padding:48px 20px 150px}.hrow{flex-direction:column;align-items:flex-start;gap:22px}.av{width:108px;height:108px}.av span{font-size:36px}.lead{font-size:17px}.stat .v{font-size:26px}.cta{padding:24px}.btns .btn{flex:1 1 auto;text-align:center}}
+@media (max-width:640px){
+.hero{padding:36px 18px 120px;clip-path:polygon(0 0,100% 0,100% calc(100% - 90px),0 100%)}
+.hrow{gap:16px}.av{width:92px;height:92px;padding:4px}
+h1{font-size:34px;margin:10px 0 10px}.lead{font-size:16px;line-height:1.5}
+.chips{gap:6px;margin-top:16px}.chip{font-size:13px;padding:7px 12px;min-height:36px}
+.cta-chip{flex:1 1 100%;justify-content:center;min-height:44px;font-size:14px}
+.wrap{padding:0 16px 48px}.stats{gap:10px;margin-top:-56px}
+.stat{padding:14px 14px 13px}.stat .ic{width:28px;height:28px;margin-bottom:8px}.stat .v{font-size:22px}.stat .k{font-size:12.5px}
+h2{font-size:21px}.sub{font-size:14px;margin-bottom:16px}
+.reqs{gap:10px}.req{padding:15px 15px 15px 48px}.req::before{left:14px;top:15px}.req p{font-size:14px}
+.case{padding:20px;gap:18px}.case h3{font-size:18px}.code{font-size:11.5px;padding:14px}
+.cta{padding:22px;margin-top:40px}.btns{width:100%}.btns .btn{flex:1 1 calc(50% - 10px);text-align:center}
+}
 .cta-chip{background:#fff;color:var(--accent);border-color:#fff;font-weight:600;cursor:pointer}.cta-chip:hover{background:#efeeff}
 </style>
 <style>#rv{display:none!important}#rv:target{display:flex!important}a.btn,a.rvb{display:inline-block;text-decoration:none}</style></head>
@@ -102,7 +115,7 @@ a.chip:hover{background:rgba(10,37,64,.5)}
   <div class="kicker" style="margin-top:64px">Fit</div>
   <h2 style="margin-top:4px" id="fitTitle">What the App Support role needs, and where I've already done it</h2>
   <p class="sub">Every item below is shipped work, not coursework.</p>
-  <div class="reqs" id="reqs"><div class="req"><b>Production support &amp; debugging</b><p>I support the burn-in (HTOL) yield app on IBM&#x27;s shared production platform, used daily by ~30 engineers, and debug issues through application logs, Python stack traces and SQL against IBM DB2.</p></div><div class="req"><b>Root-cause analysis</b><p>AI agents on IBM Bob + custom Python run the diagnostic queries automatically, cutting root-cause analysis from ~1 week to ~1 hour and saving ~25 engineering hours a week.</p></div><div class="req"><b>Hands-on SQL and Python</b><p>SQL pipelines on IBM DB2 for real-time monitoring and reporting, SQL Server databases at Abbott, and Python (pandas, Dash, Flask) across everything I ship.</p></div><div class="req"><b>Reliability and monitoring</b><p>ML anomaly detection, forecasting and alerting that catches issues engineers missed or caught late, validated against historical manual root-cause findings. Yield up 1.5 points.</p></div><div class="req"><b>Deployment and automation</b><p>My app ships through a containerized deploy-on-merge pipeline (Podman, nginx, gunicorn, Celery, Redis). I write Jenkins pipelines (Groovy) and work daily in Linux and Bash.</p></div><div class="req"><b>Business and engineering communication</b><p>Led a 6-person cross-functional team that cut schematic approvals from 2 weeks to 1.5 days, and build tools around what ~30 test engineers need every day.</p></div><div class="req"><b>Interest in quant finance</b><p>Finance Bootcamp in NYC with a PE case study on YETI; active in equity markets and quantitative investing.</p></div></div>
+  <div class="reqs" id="reqs"><div class="req"><b>Production support &amp; debugging</b><p>I support the burn-in (HTOL) yield app on IBM&#x27;s shared production platform, used daily by ~30 engineers, and debug issues through application logs, Python stack traces and SQL against IBM DB2.</p></div><div class="req"><b>Root-cause analysis</b><p>AI agents on IBM Bob + custom Python run the diagnostic queries automatically, cutting root-cause analysis from ~1 week to ~1 hour and saving ~25 engineering hours a week.</p></div><div class="req"><b>Hands-on SQL and Python</b><p>SQL pipelines on IBM DB2 for real-time monitoring and reporting, SQL Server databases at Abbott, and Python (pandas, Dash, Flask) across everything I ship.</p></div><div class="req"><b>Reliability and monitoring</b><p>ML anomaly detection, forecasting and alerting that catches issues engineers missed or caught late, validated against historical manual root-cause findings. Yield up 1.5 points.</p></div><div class="req"><b>Deployment and automation</b><p>My app ships through a containerized deploy-on-merge pipeline (Podman, nginx, gunicorn, Celery, Redis). I write Jenkins pipelines (Groovy) to automate test runs and data processing.</p></div><div class="req"><b>Linux and scripting</b><p>Daily work in Linux with Bash/shell scripting, Docker and Podman containers, and network troubleshooting with TCP/IP, DNS/DHCP and Wireshark packet capture.</p></div><div class="req"><b>Business and engineering communication</b><p>Led a 6-person cross-functional team that cut schematic approvals from 2 weeks to 1.5 days, and build tools around what ~30 test engineers need every day.</p></div><div class="req"><b>Interest in quant finance</b><p>Finance Bootcamp in NYC with a PE case study on YETI; active in equity markets and quantitative investing.</p></div></div>
 
   <div class="kicker" style="margin-top:64px">Featured build</div>
   <h2 style="margin-top:4px">One app instead of eight platforms</h2>
