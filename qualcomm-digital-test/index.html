@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Yield management, failure diagnostics, ML anomaly detection and AI agents for high-volume chip test.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Emma C. Watson">
+<meta property="og:title" content="Emma C. Watson | Why Me (Digital Test)">
+<meta property="og:description" content="Yield management, failure diagnostics, ML anomaly detection and AI agents for high-volume chip test.">
+<meta property="og:url" content="https://emmawatson.site/qualcomm-digital-test/">
+<meta property="og:image" content="https://emmawatson.site/og/qualcomm-digital-test.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<title>Emma C. Watson | Why Me (Digital Test)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+
+<style>
+:root{--ink:#0a2540;--body:#425466;--muted:#8792a2;--line:#e6ebf1;--bg:#f6f9fc;--accent:#635bff;--teal:#00d4ff;--ok:#09825d;--okbg:#e6f6ef;--sans:'Inter',system-ui,sans-serif;--mono:'JetBrains Mono',ui-monospace,monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--sans);color:var(--body);background:#fff;line-height:1.55}
+.hero{position:relative;overflow:hidden;padding:72px 20px 160px;background:#0a2540;color:#fff}
+.hero::before{content:"";position:absolute;inset:-40% -10% auto -10%;height:140%;background:linear-gradient(115deg,#635bff 0%,#a960ee 30%,#ff7a59 55%,#00d4ff 80%);transform:skewY(-8deg);opacity:.9;filter:saturate(1.1)}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:90px;background:#fff;transform:skewY(-4deg);transform-origin:left}
+.in{position:relative;max-width:1040px;margin:0 auto}
+.pill{display:inline-block;background:rgba(255,255,255,.18);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.3);padding:5px 12px;border-radius:999px;font-size:13px;font-weight:500}
+h1{font-size:clamp(34px,6vw,58px);font-weight:700;letter-spacing:-.025em;line-height:1.05;margin:16px 0 14px}
+.lead{font-size:19px;max-width:620px;color:rgba(255,255,255,.92)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px 64px;position:relative}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:-70px;position:relative;z-index:2}
+.stat{background:#fff;border-radius:12px;padding:20px;box-shadow:0 13px 27px -5px rgba(50,50,93,.18),0 8px 16px -8px rgba(0,0,0,.2)}
+.stat .v{font-size:32px;font-weight:700;color:var(--ink);letter-spacing:-.02em}
+.stat .k{font-size:13px;color:var(--muted);margin-top:2px}
+h2{font-size:26px;color:var(--ink);letter-spacing:-.015em;margin:64px 0 6px}
+.kicker{font-size:14px;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:.06em}
+.sub{color:var(--muted);margin-bottom:22px}
+.reqs{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.req{border:1px solid var(--line);border-radius:12px;padding:18px 18px 18px 54px;position:relative;transition:box-shadow .2s,transform .2s;background:#fff}
+.req:hover{box-shadow:0 8px 20px -6px rgba(50,50,93,.2);transform:translateY(-2px)}
+.req::before{content:"✓";position:absolute;left:18px;top:18px;width:24px;height:24px;border-radius:50%;background:var(--okbg);color:var(--ok);font-weight:700;font-size:13px;display:grid;place-items:center}
+.req b{display:block;color:var(--ink);font-weight:600;margin-bottom:4px}
+.req p{font-size:15px}
+.case{background:var(--bg);border-radius:16px;padding:28px;display:grid;grid-template-columns:1.2fr 1fr;gap:28px;align-items:center}
+.case h3{color:var(--ink);font-size:20px;margin-bottom:10px}
+.case ul{list-style:none;display:grid;gap:10px}
+.case li{padding-left:20px;position:relative}.case li::before{content:"";position:absolute;left:0;top:10px;width:8px;height:8px;border-radius:2px;background:var(--accent)}
+.code{background:#0a2540;color:#e3e8ee;border-radius:12px;padding:18px;font-family:var(--mono);font-size:12.5px;line-height:1.7;overflow-x:auto;white-space:pre}
+.code .c{color:#7a8ca5}.code .s{color:#80e9ff}.code .k{color:#c4b5fd}
+.cta{margin-top:56px;border-radius:16px;padding:32px;background:linear-gradient(120deg,#635bff,#00d4ff);color:#fff;display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center}
+.cta h3{font-size:22px}
+.cta .addr{font-family:var(--mono);font-size:14px;opacity:.95}
+.btns{display:flex;gap:10px;flex-wrap:wrap}
+.btn{border:none;border-radius:999px;padding:11px 20px;font:600 14px var(--sans);cursor:pointer;text-decoration:none;background:#fff;color:var(--accent)}
+.btn.ghost{background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.5)}
+footer{margin-top:28px;font-size:13px;color:var(--muted)}
+@media (max-width:820px){.stats{grid-template-columns:repeat(2,1fr)}.reqs,.case{grid-template-columns:1fr}}
+.hrow{display:flex;gap:36px;align-items:center}
+.hdt{min-width:0}
+.av{flex:none;width:148px;height:148px;border-radius:50%;padding:5px;background:linear-gradient(135deg,#fff,rgba(255,255,255,.35));box-shadow:0 20px 40px -12px rgba(10,37,64,.55)}
+.av span,.av img{width:100%;height:100%;border-radius:50%;display:grid;place-items:center;object-fit:cover}
+.av span{background:linear-gradient(135deg,#0a2540,#3a2f8f);font:700 48px var(--sans);color:#fff;letter-spacing:-.03em}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.chip{display:inline-flex;align-items:center;gap:7px;font:500 14px var(--sans);color:#fff;background:rgba(10,37,64,.28);border:1px solid rgba(255,255,255,.35);backdrop-filter:blur(6px);border-radius:999px;padding:8px 14px;text-decoration:none;min-height:38px;transition:background .15s}
+a.chip:hover{background:rgba(10,37,64,.5)}
+.stats{gap:18px}
+.stat{padding:22px 22px 20px;transition:transform .2s,box-shadow .2s}.stat:hover{transform:translateY(-3px)}
+.stat .ic{width:34px;height:34px;border-radius:9px;display:grid;place-items:center;background:#efeeff;color:var(--accent);margin-bottom:12px}
+.stat .ic svg{width:18px;height:18px}
+.stat .k{font-size:14px;line-height:1.45;margin-top:4px}
+.req{padding:20px 20px 20px 56px}.req p{line-height:1.6}
+.case{padding:32px}
+.btn{min-height:42px}
+.hero{clip-path:polygon(0 0,100% 0,100% calc(100% - 150px),0 100%)}.hero::before{inset:-40% -10% -40% -10%;height:auto}.hero::after{display:none}
+@media (max-width:640px){.hero{padding:48px 20px 150px}.hrow{flex-direction:column;align-items:flex-start;gap:22px}.av{width:108px;height:108px}.av span{font-size:36px}.lead{font-size:17px}.stat .v{font-size:26px}.cta{padding:24px}.btns .btn{flex:1 1 auto;text-align:center}}
+@media (max-width:640px){
+.hero{padding:36px 18px 120px;clip-path:polygon(0 0,100% 0,100% calc(100% - 90px),0 100%)}
+.hrow{gap:16px}.av{width:92px;height:92px;padding:4px}
+h1{font-size:34px;margin:10px 0 10px}.lead{font-size:16px;line-height:1.5}
+.chips{gap:6px;margin-top:16px}.chip{font-size:13px;padding:7px 12px;min-height:36px}
+.cta-chip{flex:1 1 100%;justify-content:center;min-height:44px;font-size:14px}
+.wrap{padding:0 16px 48px}.stats{gap:10px;margin-top:-56px}
+.stat{padding:14px 14px 13px}.stat .ic{width:28px;height:28px;margin-bottom:8px}.stat .v{font-size:22px}.stat .k{font-size:12.5px}
+h2{font-size:21px}.sub{font-size:14px;margin-bottom:16px}
+.reqs{gap:10px}.req{padding:15px 15px 15px 48px}.req::before{left:14px;top:15px}.req p{font-size:14px}
+.case{padding:20px;gap:18px}.case h3{font-size:18px}.code{font-size:11.5px;padding:14px}
+.cta{padding:22px;margin-top:40px}.btns{width:100%}.btns .btn{flex:1 1 calc(50% - 10px);text-align:center}
+}
+.cta-chip{background:#fff;color:var(--accent);border-color:#fff;font-weight:600;cursor:pointer}.cta-chip:hover{background:#efeeff}
+.deg{display:flex;align-items:center;gap:8px;font-size:18px;font-weight:600;color:#fff;margin:-4px 0 12px}.deg svg{flex:none}
+@media (max-width:640px){.deg{font-size:13.5px;gap:6px;margin:-2px 0 10px;letter-spacing:-.01em}.deg svg{width:15px;height:15px}}
+@media (min-width:1440px){html{zoom:1.12}}
+@media (min-width:1680px){html{zoom:1.3}}
+@media (min-width:1920px){html{zoom:1.45}}
+@media (min-width:2300px){html{zoom:1.75}}
+@media (min-width:2800px){html{zoom:2.1}}
+</style>
+<style>#rv{display:none!important}#rv:target{display:flex!important}a.btn,a.rvb{display:inline-block;text-decoration:none}</style></head>
+<body>
+<div class="hero"><div class="in hrow">
+  <div class="av"><img src="headshot.jpg" alt="Emma C. Watson"></div>
+  <div class="hdt">
+  <span class="pill" id="pill">Why Emma for the Digital Test role</span>
+  <h1>Emma C. Watson</h1>
+  <p class="deg"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 2 9 2 12 0v-5"/></svg>B.S. Electrical Engineering · Data Analytics minor</p>
+  <p class="lead" id="lead">Electrical engineer who owns yield for burn-in testing in high-volume chip production, using ML and AI agents for yield management and failure diagnostics. Yield up 1.5 points; root causes found in about an hour.</p>
+  <div class="chips"><a class="chip cta-chip" href="#rv"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 3H6a2 2 0 00-2 2v14a2 2 0 002 2h12a2 2 0 002-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg> View resume (PDF)</a><span class="chip"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0114 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg> Relocating to San Diego</span><a class="chip" href="mailto:watsonemmac@myyahoo.com"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg> Email</a><a class="chip" href="https://www.linkedin.com/in/emma-catherine-watson/"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 110 5 2.5 2.5 0 010-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.1c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V21h-4z"/></svg> LinkedIn</a></div>
+  </div>
+</div></div>
+<div class="wrap">
+  <div class="stats">
+    <div class="stat"><div class="ic"><svg class="i" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></div><div class="v">+1.5 pts</div><div class="k">yield from automated alerting</div></div>
+    <div class="stat"><div class="ic"><svg class="i" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div class="v">~1 hr</div><div class="k">root-cause analysis, down from ~1 week</div></div>
+    <div class="stat"><div class="ic"><svg class="i" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="7" width="10" height="10" rx="1.5"/><path d="M10 3v4M14 3v4M10 17v4M14 17v4M3 10h4M3 14h4M17 10h4M17 14h4"/></svg></div><div class="v">~16K</div><div class="k">chips/month through my burn-in test</div></div>
+    <div class="stat"><div class="ic"><svg class="i" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg></div><div class="v">~25 hrs</div><div class="k">engineering time saved weekly</div></div>
+    <div class="stat"><div class="ic"><svg class="i" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0113 0"/><path d="M16 4.5a3.5 3.5 0 010 7M18 14a6 6 0 013.5 6"/></svg></div><div class="v">~30</div><div class="k">engineers use my app daily</div></div>
+    <div class="stat"><div class="ic"><svg class="i" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/></svg></div><div class="v">8 → 1</div><div class="k">tools replaced by one live app</div></div>
+  </div>
+
+  <div class="kicker" style="margin-top:64px">Fit</div>
+  <h2 style="margin-top:4px" id="fitTitle">What the Digital Test role needs, and where I've already done it</h2>
+  <p class="sub">Every item below is shipped work, not coursework.</p>
+  <div class="reqs" id="reqs"><div class="req"><b>Yield management</b><p>I own yield strategy for high-temperature operating life (HTOL) burn-in testing across IBM Power, Z and AI chips, ~16,000 chips/month in high-volume production.</p></div><div class="req"><b>Diagnostics</b><p>AI agents on IBM Bob + custom Python run diagnostic root-cause queries, cutting root-cause analysis from ~1 week to ~1 hour and saving ~25 engineering hours a week.</p></div><div class="req"><b>AI / machine learning</b><p>Defined yield and test performance indicators, then built ML anomaly detection, forecasting and alerting, validated against historical manual root-cause findings. Yield up 1.5 points.</p></div><div class="req"><b>Silicon validation and new products</b><p>Validation testing for new hardware and test programs before they reach production, automated through Jenkins pipelines (Groovy).</p></div><div class="req"><b>High-volume manufacturing enablement</b><p>Built the burn-in yield app (Python, Dash, Plotly) on SQL pipelines to IBM DB2, used daily by ~30 engineers. It replaced 8 separate platforms.</p></div><div class="req"><b>Python and Linux</b><p>Python (pandas, NumPy, SciPy) every day on Linux, plus C/C++, SQL, Bash and Groovy.</p></div><div class="req"><b>Analytical reviews across teams</b><p>Led a 6-person cross-functional team that cut schematic approvals from 2 weeks to 1.5 days, and build tools around what test engineers need.</p></div><div class="req"><b>Engineering + analytics degree</b><p>B.S. Electrical Engineering with a Data Analytics minor (Union College, upper-level ECE GPA 3.66, Dean's List, ECBE Departmental Honors).</p></div></div>
+
+  <div class="kicker" style="margin-top:64px">Yield in production</div>
+  <h2 style="margin-top:4px;margin-bottom:22px">Catching yield issues before engineers do</h2>
+
+  <div class="case">
+    <div>
+      <h3>Problem → build → result</h3>
+      <ul>
+        <li>Hardware and test-program issues in burn-in were often missed or caught late by manual review.</li>
+        <li>Defined yield and test performance indicators, then built ML anomaly detection, forecasting and alerting on the live test data.</li>
+        <li>Validated against historical manual root-cause findings. Yield up 1.5 points across ~16,000 chips/month.</li>
+      </ul>
+    </div>
+    <div class="code"><span class="c"># yield stack</span>
+<span class="k">test</span>   = <span class="s">"HTOL burn-in"</span>
+<span class="k">volume</span> = <span class="s">"~16K chips/month"</span>
+<span class="k">models</span> = <span class="s">"anomaly detection, forecasting"</span>
+<span class="k">check</span>  = <span class="s">"vs. manual RCA history"</span>
+<span class="k">result</span> = <span class="s">"+1.5 pts yield"</span></div>
+  </div>
+
+  <div class="kicker" style="margin-top:64px">AI in production</div>
+  <h2 style="margin-top:4px;margin-bottom:22px">Agents that do the root-cause digging</h2>
+
+  <div class="case">
+    <div>
+      <h3>Problem → build → result</h3>
+      <ul>
+        <li>After an alert fired, engineers still traced the cause by hand across test data.</li>
+        <li>Built AI agents on IBM Bob + custom Python that run the root-cause queries automatically.</li>
+        <li>In production. Part of cutting RCA from ~1 week to ~1 hour and saving ~25 hours a week.</li>
+      </ul>
+    </div>
+    <div class="code"><span class="c"># ai stack</span>
+<span class="k">agents</span> = <span class="s">"IBM Bob + Python"</span>
+<span class="k">task</span>   = <span class="s">"root-cause queries"</span>
+<span class="k">ml</span>     = <span class="s">"anomaly detection, forecasting"</span>
+<span class="k">status</span> = <span class="s">"production"</span></div>
+  </div>
+
+  <div class="cta">
+    <div><h3>Let's talk.</h3><div class="addr">watsonemmac@myyahoo.com · (603) 605-4960</div></div>
+    <div class="btns"><a class="btn" href="mailto:watsonemmac@myyahoo.com">Email me</a><a class="btn ghost" href="https://www.linkedin.com/in/emma-catherine-watson/">LinkedIn</a><a class="btn ghost" href="#rv">Resume (PDF)</a></div>
+  </div>
+  <footer>B.S. Electrical Engineering, Minor in Data Analytics · Union College · Full resume: <a href="#rv" style="color:inherit;text-decoration:underline">view PDF</a></footer>
+</div>
+
+<div id="rv" role="dialog" aria-modal="true" aria-label="Resume" style="position:fixed;inset:0;background:#525659;display:none;flex-direction:column;z-index:9999;font-family:Inter,system-ui,sans-serif">
+<div style="display:flex;align-items:center;gap:12px;padding:10px 16px;background:#323639;color:#f1f1f1;font-size:13px"><b style="font-weight:600">Emma C. Watson · Resume</b><span style="opacity:.7">Page 1 of 1</span>
+<span style="margin-left:auto;display:flex;gap:8px;align-items:center"><a class="rvb" id="rvd" href="resume.pdf" download="Emma Watson Qualcomm Resume.pdf" style="text-decoration:none">Download PDF ↓</a><a class="rvb" href="#">Close ✕</a></span></div>
+<div style="flex:1;overflow:auto;padding:24px 16px 40px"><div id="rvp" style="position:relative;margin:0 auto;background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.45);aspect-ratio:8.5/11;width:min(816px,calc(100vw - 32px))"><img src="resume.png" alt="Emma C. Watson resume" style="display:block;width:100%;height:100%"><a href="https://www.linkedin.com/in/emma-catherine-watson/" target="_blank" rel="noopener" title="LinkedIn" style="position:absolute;left:33%;top:3.5%;width:34%;height:4.5%"></a></div></div></div>
+<style>.rvb{background:#4a4e51;border:none;color:#f1f1f1;border-radius:6px;padding:6px 10px;font:500 12px Inter,system-ui,sans-serif;cursor:pointer}.rvb:hover{background:#5d6164}</style>
+
+
+</body>
+</html>
